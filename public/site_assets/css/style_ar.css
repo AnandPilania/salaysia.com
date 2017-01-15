@@ -1,0 +1,41 @@
+.as-wrap .as-progress-value {
+    right: 0;
+}
+.as-wrap .as-view .as-slider .as-item {
+    float: right;
+}
+.boxes ul li {
+    float: right;
+}
+.homepage-search-max ul {
+    float: right;
+}
+.search_btn {
+    margin-left: 3em;
+}
+.text-left{
+    text-align: right !important;
+}
+.homepage-search-max .search_btn {
+    float: right;
+}
+.chosen-container .chosen-drop {
+  right: -9999px;
+}
+.chosen-container.chosen-with-drop .chosen-drop {
+  right: 0;
+}
+@media (max-width: 1024px) {
+    #myNavbar{
+    float: right !important;
+}
+    }
+#myNavbar{
+    float: left;
+}
+.featyres-ui{
+right: -100% !important;
+}
+.navbar-brand{
+    float: right !important;
+}

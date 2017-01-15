@@ -1,0 +1,32 @@
+.as-wrap .as-progress-value {
+    left: 0;
+}
+.as-wrap .as-view .as-slider .as-item {
+    float: left;
+}
+.boxes ul li {
+    float: left;
+}
+.homepage-search-max ul {
+    float: left;
+}
+.search_btn {
+    margin-right: 3em;
+}
+.chosen-container .chosen-drop {
+  left: -9999px;
+}
+.chosen-container.chosen-with-drop .chosen-drop {
+  left: 0;
+}
+@media (max-width: 1024px) {
+    #myNavbar{
+    float: left !important;
+}
+    }
+#myNavbar{
+    float: right;
+}
+.featyres-ui{
+left: -100% !important;
+}
