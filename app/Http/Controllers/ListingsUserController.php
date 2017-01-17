@@ -352,7 +352,7 @@ $listing_gallery_images = ListingGallery::where('listing_id',$listing_id)->order
 	}else{
 		$listings->level= implode(',',$inputs['level']);
 	}
-        //$listings->ranking= implode(',',$inputs['ranking']);
+        $listings->ranking= implode(',',$inputs['ranking']);
         $listings->scolarship= $inputs['scolarship'];
 
         $listings->map_lat = $inputs['latitude'];
@@ -469,7 +469,7 @@ $listing_gallery_images = ListingGallery::where('listing_id',$listing_id)->order
             return \Redirect::back();
         }else{
 
-            \Session::flash('flash_message', 'Listing Added');
+            \Session::flash('flash_message', 'Universitie Added');
 
             return \Redirect::back();
 
@@ -642,7 +642,7 @@ $listings->video3 = $inputs['video3'];
             return \Redirect::back();
         }else{
 
-            \Session::flash('flash_message', 'Listing Added');
+            \Session::flash('flash_message', 'Universitie Added');
 
             return \Redirect::back();
 
