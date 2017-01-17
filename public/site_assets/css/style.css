@@ -539,6 +539,7 @@ margin-top: -6px !important;
 border-radius: 0 6px 6px 6px !important;
     
 }
+
 .drob-sub:hover .featyres-ui {
     display: block;
 }
@@ -1281,6 +1282,7 @@ border-radius: 0 6px 6px 6px !important;
     padding: 20px;
     color: #fff;
     padding-bottom: 5px;
+    margin-top: 15px;
 }
 
 .heaidng-stdy-looking {
