@@ -31,7 +31,7 @@ CREATE TABLE `brands` (
   `id` int(10) UNSIGNED NOT NULL,
   `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `brand_slug` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `description` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
   `services` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `products` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `team` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -89,9 +89,9 @@ CREATE TABLE `categories` (
   `status` int(11) NOT NULL,
   `meta_keywords` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
   `description` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
-  `aim_category` longtext COLLATE utf8_unicode_ci NOT NULL,
-  `careers_category` longtext COLLATE utf8_unicode_ci NOT NULL,
-  `admission_category` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `aim_category` text COLLATE utf8_unicode_ci NOT NULL,
+  `careers_category` text COLLATE utf8_unicode_ci NOT NULL,
+  `admission_category` text COLLATE utf8_unicode_ci NOT NULL,
   `featured_image` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -120,7 +120,7 @@ CREATE TABLE `city` (
   `city_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `slug` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `famous_places` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `description` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
   `featured_image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `status` int(11) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -186,7 +186,7 @@ CREATE TABLE `countries` (
   `auther_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `testimonial_slug` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `description` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
   `featured_image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `status` int(11) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -224,7 +224,7 @@ DROP TABLE IF EXISTS `countries_trans`;
 CREATE TABLE `countries_trans` (
   `id` int(10) UNSIGNED NOT NULL,
   `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `description` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
   `lang` varchar(2) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -471,7 +471,7 @@ CREATE TABLE `listings` (
   `featured_listing` int(11) NOT NULL,
   `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `listing_slug` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `description` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
   `welcome_content` varchar(500) COLLATE utf8_unicode_ci DEFAULT NULL,
   `campus_content` varchar(500) COLLATE utf8_unicode_ci DEFAULT NULL,
   `academic_content` varchar(500) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -486,7 +486,7 @@ CREATE TABLE `listings` (
   `video2` text COLLATE utf8_unicode_ci NOT NULL,
   `video3` text COLLATE utf8_unicode_ci NOT NULL,
   `address` text COLLATE utf8_unicode_ci NOT NULL,
-  `contact_details` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `contact_details` text COLLATE utf8_unicode_ci NOT NULL,
   `country` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `city` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
   `scolarship` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -625,7 +625,7 @@ DROP TABLE IF EXISTS `listings_trans`;
 CREATE TABLE `listings_trans` (
   `id` int(10) UNSIGNED NOT NULL,
   `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `description` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
   `lang` varchar(2) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -972,7 +972,7 @@ CREATE TABLE `settings` (
   `home_slide_text` text COLLATE utf8_unicode_ci NOT NULL,
   `page_bg_image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `about_title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `about_description` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `about_description` text COLLATE utf8_unicode_ci NOT NULL,
   `contact_title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `contact_address` text COLLATE utf8_unicode_ci NOT NULL,
   `contact_email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -980,11 +980,11 @@ CREATE TABLE `settings` (
   `contact_lat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `contact_long` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `terms_of_title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `terms_of_description` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `terms_of_description` text COLLATE utf8_unicode_ci NOT NULL,
   `privacy_policy_title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `privacy_policy_description` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `privacy_policy_description` text COLLATE utf8_unicode_ci NOT NULL,
   `service_title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `service_description` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `service_description` text COLLATE utf8_unicode_ci NOT NULL,
   `facebook_url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `twitter_url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `gplus_url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -1104,7 +1104,7 @@ CREATE TABLE `testimonials` (
   `auther_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `testimonial_slug` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `description` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
   `featured_image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `status` int(11) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
