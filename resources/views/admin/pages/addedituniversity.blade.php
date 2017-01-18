@@ -422,11 +422,11 @@ if(isset($listing->city)){
                                 </div>
                                 <div class="form-group col-sm-12">
                                     <label for="first" class="control-label">Address :-</label>
-                                    <textarea rows="7" placeholder="Address" name="address" class=" form-control">{{ isset($listing->address) ? $listing->address : null }}</textarea>
+                                    <textarea rows="7" placeholder="Address" name="address" id="summernote7" class="js-summernote form-control">{{ isset($listing->address) ? $listing->address : null }}</textarea>
                                 </div>
                                 <div class="form-group col-sm-12">
                                     <label for="first" class="control-label">Contact Details :-</label>
-                                    <textarea rows="7" placeholder="Contact Details" name="contact_details" class=" form-control">{{ isset($listing->contact_details) ? $listing->contact_details : null }}</textarea>
+                                    <textarea rows="7" placeholder="Contact Details" name="contact_details" id="summernote7" class="js-summernote form-control">{{ isset($listing->contact_details) ? $listing->contact_details : null }}</textarea>
                                 </div>
                                  <div class="form-group col-sm-6">
                                     <label for="first" class="control-label">Country:-</label>

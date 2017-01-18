@@ -6,7 +6,7 @@
 
 @section('content')
 
-<div class="tp-page-head" style="background:url({{ URL::asset('upload/'.getcong('page_bg_image'))}}) no-repeat">
+<div class="tp-page-head"  style="background:url({{ URL::asset('upload/'.getcong('page_bg_image'))}}) no-repeat;margin-top: 13px">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
