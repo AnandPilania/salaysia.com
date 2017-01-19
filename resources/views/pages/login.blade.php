@@ -75,7 +75,9 @@
               <a href="{{ URL::to('register') }}" class="pull-right"> <small>{{trans('home.Register')}}</small></a> 
 
               <a href="{{ URL::to('password/email') }}" class="pull-right" style="margin-right: 25px;
-"> <small>{{trans('home.fpass')}}</small></a> </div>
+"> <small>{{trans('home.fpass')}}</small></a> 
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            </div>
           {!! Form::close() !!} 
         </div>
       </div>

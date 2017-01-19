@@ -39,12 +39,12 @@
           
           @foreach($listings as $listing) 
           <div class="col-md-4 vendor-box" style="min-height:410px;">
-            <div class="vendor-image"> <a href="{{URL::to('products/'.$listing->listing_slug.'/'.$listing->id)}}"><img src="{{ URL::asset('upload/listings/'.$listing->featured_image.'-s.jpg') }}" class="img-responsive"></a>
+            <div class="vendor-image"> <a href="{{URL::to('universities/'.$listing->listing_slug.'/'.$listing->id)}}"><img src="{{ URL::asset('upload/listings/'.$listing->featured_image.'-s.jpg') }}" class="img-responsive"></a>
                
             </div>
             <div class="vendor-detail">
               <div class="caption">
-                <h2><a href="{{URL::to('products/'.$listing->listing_slug.'/'.$listing->id)}}" class="title">{{$listing->title}}</a></h2>
+                <h2><a href="{{URL::to('universities/'.$listing->listing_slug.'/'.$listing->id)}}" class="title">{{$listing->title}}</a></h2>
                 <p class="location" style="min-height:42px;">{{str_limit($listing->address,50)}}</p>
                 <div class="rating"> 
                 @for($x = 0; $x < 5; $x++)

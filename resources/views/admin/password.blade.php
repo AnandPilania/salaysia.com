@@ -94,6 +94,7 @@
                                 </div>
                                 <div class="form-group">
                                             <button class="btn btn-block btn-primary" type="submit"><i class="si si-envelope-open pull-right"></i> Send Mail</button>
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 </div>
                                  
                             {!! Form::close() !!} 
