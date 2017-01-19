@@ -469,7 +469,7 @@ $listing_gallery_images = ListingGallery::where('listing_id',$listing_id)->order
             return \Redirect::back();
         }else{
 
-            \Session::flash('flash_message', 'Universitie Added');
+            \Session::flash('flash_message', 'University Added');
 
             return \Redirect::back();
 
@@ -642,7 +642,7 @@ $listings->video3 = $inputs['video3'];
             return \Redirect::back();
         }else{
 
-            \Session::flash('flash_message', 'Universitie Added');
+            \Session::flash('flash_message', 'University Added');
 
             return \Redirect::back();
 
